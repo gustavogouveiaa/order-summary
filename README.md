@@ -1,2 +1,1 @@
-# Desafio do Front-end Mentor
-## Order Summary
+# Order Summary - Front-end Mentor challenge
