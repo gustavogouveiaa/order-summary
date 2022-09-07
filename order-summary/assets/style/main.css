@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display";
+}
+body {
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(/assets/img/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* card */
+.main-card {
+  width: 30em;
+  height: 45em;
+  background-color: hsl(225, 100%, 98%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-card > img {
+  border-radius: 2em 2em 0 0;
+  width: 100%;
+  margin: 0 0 2em 0;
+}
+
+/* informações de texto */
+.plan_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.info_text {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+.info_text h1 {
+  font-size: 2em;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: .7em;
+}
+.info_text p {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%, 80%);
+  line-height: 1.5em;
+}
+/* Preço do plano */
+.info_price {
+  width: 100%;
+  height: 6.5em;
+  background-color: hsl(225, 100%, 94%, 35%);
+  border-radius: 1em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.icon_music {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%
+}
+.icon_music img {
+  width: 60px;
+}
+
+.price {
+  line-height: 1.5em;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.price p:nth-child(1) {
+  color: hsl(223, 47%, 23%);
+  font-size: 1em;
+  font-weight: 900;
+}
+.price p:nth-child(2) {
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+
+.change {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.change a{
+  font-size: 1em;
+  font-weight: 900;
+  color: hsl(245, 75%, 52%);
+  text-decoration: none;
+  transition: all 0.3s;
+
+}
+.change a:hover {
+  color: hsl(245, 75%, 52%, 50%);
+  text-decoration: underline;
+}
+
+/* Submit button */
+
+button {
+  width: 100%;
+  height: 20%;
+  border-radius: .8em;
+  border: none;
+  color: #fff;
+  background-color: hsl(245, 75%, 52%);
+  font-size: 1.1em;
+  font-weight: 700;
+  transition: all .5s;
+  box-shadow: 0 .5em 30px .2px hsl(245, 75%, 52%, 50%);
+  margin-bottom: 2.5em;
+
+}
+button:hover {
+  /* font-size: 1.2em; */
+  cursor: pointer;
+  background-color: hsl(245, 75%, 52%, 70%);
+}
+
+.plan_info > a {
+  font-size: 1.1em;
+  font-weight: 900;
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  transition: all .5s;
+}
+
+.plan_info > a:hover {
+  font-size: 1.2em;
+  text-decoration: underline;
+  color: hsl(223, 47%, 23%);
+}
